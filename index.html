@@ -1,10 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title> Home </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIT223-SIT753 - Home</title>
 <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
 </head>
 <body>
-<h1>SIT223-SIT753 - Professional Practice in IT</h1>
+
+<!-- ===== HEADER ===== -->
+<!-- Contains: Deakin logo, unit details, main navigation links -->
+<header class="site-header">
+
+  <!-- Header Top -->
+  <div class="header-top">
+    <div class="header-top-inner">
+      <ul class="contact-list">
+        <li><a href="mailto:support@deakin.edu.au"><span class="icon">📧</span> support@deakin.edu.au</a></li>
+        <li><a href="tel:+61392446100"><span class="icon">📞</span> +61 3 9244 6100</a></li>
+      </ul>
+      <ul class="social-list">
+        <li><a href="#">FB</a></li>
+        <li><a href="#">TW</a></li>
+        <li><a href="#">IN</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Header Bottom -->
+  <div class="header-bottom">
+    <div class="header-bottom-inner">
+
+      <!-- Logo + Unit details -->
+      <a href="#" class="header-brand">
+        <img src="images/Deakin_University_Logo_2017.svg.webp" alt="Deakin University Logo" class="header-logo">
+        <span class="header-unit">SIT223-SIT753 Unit Details</span>
+      </a>
+
+      <!-- Mobile nav toggle -->
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Main navigation -->
+      <nav id="nav-links" class="main-nav">
+        <a href="#"><span class="icon">🏠</span> Home</a>
+        <a href="#unit-details"><span class="icon">📘</span> Unit Details</a>
+        <a href="#assessments"><span class="icon">📝</span> Assessments</a>
+        <a href="#resources"><span class="icon">📚</span> Resources</a>
+      </nav>
+
+    </div>
+  </div>
+
+</header>
+<!-- ===== END HEADER ===== -->
+
+<main>
+
+</main>
+
+<script>
+  const navToggle = document.getElementById('nav-toggle');
+  const navLinks = document.getElementById('nav-links');
+  navToggle.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', isOpen);
+  });
+</script>
+
 </body>
 </html>
